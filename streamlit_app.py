@@ -6,6 +6,7 @@ from urllib.error import URLError
 
 
 streamlit.title("My Mom's New Healthy Diner")
+streamlit.text("Hello from Snowflake:")
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
