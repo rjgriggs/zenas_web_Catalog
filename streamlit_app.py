@@ -1,11 +1,10 @@
 import streamlit
 import pandas
-import requests
 import snowflake.connector
-from urllib.error import URLError
 
 
-streamlit.title("My Mom's New Healthy Diner")
+
+streamlit.title('Zena\'s Amazing Atheleisure Catalog')
 streamlit.text("Hello from Snowflake:")
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
